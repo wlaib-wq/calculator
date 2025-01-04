@@ -1,0 +1,38 @@
+.section{
+    text-align: center;
+    display: grid;
+}
+
+.number_calculator{
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
+    grid-template-columns: repeat(3, 50px);
+    justify-content: center;
+    margin-top:10px ;
+    gap: 10px;
+}
+
+.tex{
+    height: 5vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+
+.number{
+    border: solid 2px black;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: none;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+
+
+.number:hover{
+    background-color: rgb(135, 135, 135);
+}
