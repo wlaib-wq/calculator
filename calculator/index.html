@@ -10,26 +10,33 @@
 
     <section class="section">
 
-        <div class="Input">
-            <input id="val" class="tex" type="text">
-        </div>
-        
+        <div class="calculator" id="calculator">
 
-        <div class="number_calculator">
-            <button onclick="number_calculator()" class="number"><p id="calculator_number">1</p></button>
-            <button onclick="number_calculator()" class="number"><p id="calculator_number">2</p></button>
-            <button onclick="number_calculator()" class="number"><p id="calculator_number">3</p></button>
-            <button onclick="number_calculator()" class="number"><p id="calculator_number">4</p></button>
-            <button onclick="number_calculator()" class="number"><p id="calculator_number">5</p></button>
-            <button onclick="number_calculator()" class="number"><p id="calculator_number">6</p></button>
-            <button onclick="number_calculator()" class="number"><p id="calculator_number">7</p></button>
-            <button onclick="number_calculator()" class="number"><p id="calculator_number">8</p></button>
-            <button onclick="number_calculator()" class="number"><p id="calculator_number">9</p></button>
-            <button onclick="number_calculator()" class="number"><p id="calculator_number">0</p></button>
-            <button onclick="number_calculator()" class="number><p id="num">=</p></button>
-        </div>
-    </section>
+            <input placeholder="Введите число" id="display" type="text">
+            <br>
 
+            <button onclick="addToDisplay('7')">7</button>
+            <button onclick="addToDisplay('8')">8</button>
+            <button onclick="addToDisplay('9')">9</button>
+            <button onclick="addToDisplay('+')">+</button>
+            <br>
+            <button onclick="addToDisplay('4')">4</button>
+            <button onclick="addToDisplay('5')">5</button>
+            <button onclick="addToDisplay('6')">6</button>
+            <button onclick="addToDisplay('-')">-</button>
+            <br>
+            <button onclick="addToDisplay('1')">1</button>
+            <button onclick="addToDisplay('2')">2</button>
+            <button onclick="addToDisplay('3')">3</button>
+            <button onclick="addToDisplay('*')">*</button>
+            <br>
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="addToDisplay('0')">0</button>
+            <button onclick="calculateResult()">=</button>
+            <button onclick="addToDisplay('/')">/</button>
+
+        </div>
+   
     <script src="js.js"></script>
     
 </body>
